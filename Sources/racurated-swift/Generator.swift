@@ -13,7 +13,7 @@ struct Generator {
     }
 
     private let environment: Environment
-    
+
     private let client: Client
 
     init(client: Client) {
