@@ -1,0 +1,12 @@
+<div class="project {{ project.type }}">
+	<h1>
+		<a href="{{ project.repo_url }}">{{ project.name }}</a>
+		{% if project.highlights | size > 0 %}
+			<span class="highlights">{{ project.highlights | join: ", " }}</span>
+		{% endif %}
+	</h1>
+
+	<p>{{ project.description }} </p>
+
+	<p class="repo-link"><a href="{{ project.repo_url }}">{{ project.repo_url | remove: "http://" | remove: "https://" }}</a></p>
+</div>
